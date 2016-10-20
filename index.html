@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Moja kuhinja</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/flexslider.css" text="text/css">
+  <link rel="stylesheet" href="styles/site.css" text="text/css">
+  <script src="http://code.jquery.com/jquery-2.2.4.js"></script>
+  <script src="js/jquery.flexslider-min.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    $(window).load(function() {
+      $('.flexslider').flexslider({
+        animation: "slide"
+      });
+    });   
+  </script>
+</head>
+
+<body>
+  <nav>
+    <div class="container">
+      <img class="menu-icon" src="images/menu-icon.png" alt="menu"></img>
+      <ul class="nav-list">
+        <li><a href="#">DOMAĆA</a></li>
+        <li><a href="#">KINESKA</a></li>
+        <li><a href="#">PIZZE</a></li>
+        <li><a href="#">KONTAKT</a></li>
+      </ul>
+      <ul class="social-list">
+        <li>
+          <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+        </li>
+        <li>
+          <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+        </li>
+        <li>
+          <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <header class="container">
+    <h1>Moja kuhinja</h1>
+    <h3>ZA VAŠU ZDRAVU ISHRANU</h3>
+  </header>
+  <section class="feature">
+    <div class="flexslider">
+      <ul class="slides">
+        <li>
+          <img src="images/salad2.png">
+        </li>
+        <li>
+          <img src="images/salad3.png">
+        </li>
+        <li>
+          <img src="images/salad4.png">
+        </li>
+        <li>
+          <img src="images/salad5.png">
+        </li>
+        <li>
+          <img src="images/salad6.png">
+        </li>
+        <li>
+          <img src="images/salad7.png">
+        </li>
+        <li>
+          <img src="images/salad8.png">
+        </li>
+      </ul>
+    </div>
+  </section>
+  <article class="container">
+    <h2>Brza usluga</h2>
+    <p>Lorem ipsum dolor sit amet, id eos iudico deserunt voluptaria, minimum dissentias at usu, sit sanctus scripserit ne. Sed conceptam reprehendunt te, id quo putant scripta, ad ius omnium temporibus. Eos agam feugiat ea, velit facilisis ad sea. At nibh epicurei praesent nam, an putent posidonium complectitur vis, in nisl quaeque pri. Sed erant vivendum vituperatoribus in, mei ex antiopam abhorreant reprimique, ad persius inimicus repudiare eum.</p>
+  </article>
+  <section class="product-samples">
+    <div class="container">
+      <h2>Naša preporuka</h2>
+      <ul class="product-list clearfix">
+        <li class="prod-samp1">
+          <span class="caption">
+            <a href="#">Lorem ipsum dolor sit amet</a><img class="sample-icon" src="images/logo-small.png">
+          </span>
+        </li>
+        <li class="prod-samp2">
+          <span class="caption">
+            <a href="#">Lorem ipsum dolor sit amet</a><img class="sample-icon" src="images/logo-small.png">
+          </span>
+        </li>
+        <li class="prod-samp3">
+          <span class="caption">
+            <a href="#">Lorem ipsum dolor sit amet</a><img class="sample-icon" src="images/logo-small.png">
+          </span>
+        </li>
+        <li class="prod-samp4">
+          <span class="caption">
+            <a href="#">Lorem ipsum dolor sit amet</a><img class="sample-icon" src="images/logo-small.png">
+        </span>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <footer>
+    <div class="container clearfix">
+      <div class="col-one-third">
+        <h3>Blog o zdravoj hrani</h3>
+        <dl class="footer-list">
+          <dt>Zelena boja povrća<dt>
+          <dd>10. mart 2015</dd>
+          <dt>Crvena za zdravlje</dt>
+          <dd>08. mart 2015</dd>
+          <dt>Šta ne treba jesti u proleće</dt>
+          <dd>03. mart 2015</dd>
+        </dl>
+      </div>
+      <div class="col-one-third">
+        <h3 class="">Kontakt</h3>
+        <address>
+          ul. dobrih želja br. 7<br/>
+          Zeleno brdo<br/>
+          (077)777-7777<br/><br/>
+          <a href="mailto:infro@email.com">info@email</a>
+        </address>
+      </div>
+      <div class="col-one-third registration">
+        <h3>Registruj se</h3>
+        <form>
+          <input type="text" id="name" placeholder="Name">
+          <input type="text" id="email" placeholder="Email@adresa.com">
+          <button type="submit">POŠALJI</button>
+        </form>
+      </div>
+    </div>
+    <span class="copyright">&copy;copyright 2015, Moja kuhinja</span>
+  </footer>
+
+  <script>
+    $(function() {
+      $nav = $('.nav-list');
+      $('.menu-icon').click(function() {
+        $nav.slideToggle();
+      });
+      $(window).resize(function() {
+        if ($(window).width() >= 640) {
+          $nav.show();
+        } else {
+          $nav.hide();
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>

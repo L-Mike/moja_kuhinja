@@ -1,0 +1,19 @@
+navbg - 40px #f2801d
+
+slogan - 135px #777777
+
+heroimg bg - 300px #363636
+
+brza usluga - 200px
+
+preporuka - 315px #dadada
+
+product img - 210 x 210px
+
+footer - 310px #252525
+
+footer text - #9d9d9d
+
+input -  #363636 border #6d6d6d text #6d6d6d
+
+copy bg 40px
